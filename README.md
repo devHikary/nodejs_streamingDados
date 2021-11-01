@@ -12,7 +12,11 @@ Instrutora: Juliana Negreiros
 - Entrada e saída de dados com Streams
 - Melhoria de performance com streams
 - Event Loop do Javascript
+### Aula 2
 
+- Como criar uma nova rota para upload de imagem
+- Formas de salvar arquivos no servidor
+- Segurança ao subir arquivos
 
 
 Créditos pelas imagens utilizadas na curso:
