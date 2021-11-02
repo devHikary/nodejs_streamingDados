@@ -17,6 +17,14 @@ Instrutora: Juliana Negreiros
 - Como criar uma nova rota para upload de imagem
 - Formas de salvar arquivos no servidor
 - Segurança ao subir arquivos
+### Aula 3
+
+- O que é um serviço
+- Como consumir uma API dentro do Node
+- Como usar o Axios para consumir uma API
+
+
+
 
 
 Créditos pelas imagens utilizadas na curso:
