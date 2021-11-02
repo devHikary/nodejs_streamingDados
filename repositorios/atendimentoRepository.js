@@ -1,12 +1,12 @@
 const query = require('../infra/database/queries')
 
 class Atendimento {
-  adiciona(atendimento){
+  adiciona(atendimento) {
     const sql = 'INSERT INTO Atendimentos SET ?'
     return query(sql, atendimento);
   }
 
-  lista(){
+  lista() {
     const sql = 'SELECT * FROM Atendimentos '
     return query(sql);
   }
@@ -14,8 +14,15 @@ class Atendimento {
   buscarPorId(id) {
     const sql = `SELECT * FROM atendimentos WHERE id = ${id}`;
 
-    return query(sql, id);
-}
+    return query(sql);
+  }
+
+  altera(id, valores){
+
+    const sql = 'UPDATE Atendimentos SET ? WHERE id=?'
+    
+    return query(sql, [valores, id]);
+  }
 }
 
 module.exports = new Atendimento();

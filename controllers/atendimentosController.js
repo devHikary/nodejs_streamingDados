@@ -12,8 +12,8 @@ module.exports = app => {
 
     const id = req.params.id;
     Atendimento.buscarPorId(id)
-    .then(resultados => res.json(resultados))
-    .catch(erros => res.status(400).json(erros))
+      .then(resultados => res.json(resultados))
+      .catch(erros => res.status(400).json(erros))
 
   });
 
@@ -27,7 +27,9 @@ module.exports = app => {
   app.patch('/atendimentos/:id', (req, res) => {
     const id = parseInt(req.params.id)
     const valores = req.body;
-    Atendimento.alterar(id, valores, res);
+    Atendimento.alterar(id, valores)
+      .then(resultados => res.json(resultados))
+      .catch(erros => res.status(400).json(erros));
   })
 
   app.delete('/atendimentos/:id', (req, res) => {
