@@ -28,7 +28,12 @@ Instrutora: Juliana Negreiros
 - Como o MVC funciona
 - O que são e como usar promises
 - Separar responsabilidades no código
+### Aula 5
 
+- Alteramos o CRUD Atendimento para separar responsabilidades
+- Separar melhor as responsabilidades das validações
+- Tratamento de erros
+- Tratamento de Status HTTP
 
 
 
