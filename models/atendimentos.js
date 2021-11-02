@@ -84,16 +84,10 @@ class Atendimento {
 
   }
 
-  deletar(id, valores, res) {
-    const sql = 'DELETE FROM Atendimentos WHERE id=?'
+  deletar(id) {
+ 
+    return repositorio.deleta(id);
 
-    conexao.query(sql, id, (erro, resultados) => {
-      if (erro) {
-        res.status(400).json(erro)
-      } else {
-        res.status(200).json({ ...valores, id })
-      }
-    })
   }
 }
 

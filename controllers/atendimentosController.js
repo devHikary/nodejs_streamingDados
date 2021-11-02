@@ -28,14 +28,16 @@ module.exports = app => {
     const id = parseInt(req.params.id)
     const valores = req.body;
     Atendimento.alterar(id, valores)
-      .then(resultados => res.json(resultados))
+      .then(() => res.json({...valores, id}))
       .catch(erros => res.status(400).json(erros));
   })
 
   app.delete('/atendimentos/:id', (req, res) => {
     const id = parseInt(req.params.id)
     const valores = req.body;
-    Atendimento.deletar(id, valores, res)
+    Atendimento.deletar(id)
+      .then(() => res.json({ ...valores, id }))
+      .catch(erros => res.status(400).json(erros));
   })
 }
 
