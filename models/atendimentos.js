@@ -1,4 +1,4 @@
-const conexao = require('../infra/conexao')
+const conexao = require('../infra/database/conexao')
 const moment = require('moment')
 const axios = require('axios')
 

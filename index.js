@@ -1,6 +1,6 @@
 const customExpress = require('./config/customExpress')
-const conexao = require('./infra/conexao')
-const tabela = require('./infra/tabelas')
+const conexao = require('./infra/database/conexao')
+const tabela = require('./infra/database//tabelas')
 
 
 conexao.connect((erro) => {
