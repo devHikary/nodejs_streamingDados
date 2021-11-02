@@ -22,6 +22,12 @@ Instrutora: Juliana Negreiros
 - O que é um serviço
 - Como consumir uma API dentro do Node
 - Como usar o Axios para consumir uma API
+### Aula 4
+
+- O que é um repositório
+- Como o MVC funciona
+- O que são e como usar promises
+- Separar responsabilidades no código
 
 
 
